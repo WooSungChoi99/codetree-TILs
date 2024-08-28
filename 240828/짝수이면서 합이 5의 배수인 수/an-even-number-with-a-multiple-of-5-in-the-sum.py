@@ -1,9 +1,7 @@
 def is_magic_number(n) :
     first_digit = n // 10
     second_digit = n % 10
-    if n%2==0 and (first_digit+second_digit)%5==0 :
-        return True
-    return False
+    return n%2==0 and (first_digit+second_digit)%5==0
 
 n = int(input())
 
