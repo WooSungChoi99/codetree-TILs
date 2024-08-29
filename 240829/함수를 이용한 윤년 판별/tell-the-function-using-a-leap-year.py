@@ -13,23 +13,7 @@ if is_yunyear(y) :
     print("true")
 else :
     print("false")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 # year = int(input())
 
 # def leap_year(year) : 
