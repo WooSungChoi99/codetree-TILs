@@ -25,9 +25,6 @@ for i in range(a, b+1) :
 print(cnt)
 
 
-
-
-
 # a, b = tuple(map(int, input().split()))
 
 
