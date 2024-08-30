@@ -13,15 +13,6 @@ if is_partial(n1, A, n2,  B) :
 else :
     print("No")
 
-
-
-
-
-
-
-
-
-
 # a, b = tuple(map(int, input().split()))
 # list_a = list(map(int, input().split()))
 # list_b = list(map(int, input().split()))
