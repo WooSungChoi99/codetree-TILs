@@ -7,7 +7,7 @@ def last_day_number(M) :
         return 30
     return 31
 
-if judge_day(M, D) :
+def judge_day(M, D) :
     if M <= 12 and D <= last_day_number(M) :
         return True
     return False
