@@ -48,23 +48,6 @@ print(which_season(y, m, d))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # #1. 정수 입력
 
 # Y, M, D = list(map(int, input().split()))
