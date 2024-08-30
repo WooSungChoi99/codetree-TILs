@@ -25,11 +25,7 @@ def last_day_number(y, m) :
 
 
 def is_real_date(y, m, d) :
-    if d <= last_day_number(y, m) :
-        return True
-    
-    return False
-
+    return d <= last_day_number(y, m) 
 
 def which_season(y, m, d) :
     if is_real_date(y, m, d) :
