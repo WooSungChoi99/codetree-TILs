@@ -1,43 +1,21 @@
 M, D = tuple(map(int, input().split()))
 
-def is_correct_date(M, D) :
+def last_day_number(M) :
     if M == 2 :
-        if 1 <= D and D <= 28 :
-            return True
-    elif M <= 7 : 
-        if M % 2 == 0 :
-            return 1 <= D and D <= 30 
-        else :
-            return 1 <= D and D <= 31 
-    elif 8 <= M <= 12 :
-        if M % 2 == 0 :
-            return 1 <= D and D <= 31 
-        else : 
-            return 1 <= D and D <= 30 
-    else :
-        return False
+        return 28
+    elif M == 4 or M == 6 or M == 9 or M == 11 :
+        return 30
+    return 31
+
+if judge_day(M, D) :
+    if M <= 12 and D <= last_day_number(M) :
+        return True
     return False
 
-if is_correct_date(M, D) :
+if judge_day(M, D) :
     print("Yes")
 else :
     print("No")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #1. M, D를 올바르게 입력받는데
