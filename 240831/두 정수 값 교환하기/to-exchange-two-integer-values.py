@@ -5,4 +5,5 @@ def change_value(num1, num2) :
     
     return num1, num2
 
-print(change_value(n, m)[0], change_value(n, m)[1])
+n, m = change_value(n, m)
+print(n, m)
