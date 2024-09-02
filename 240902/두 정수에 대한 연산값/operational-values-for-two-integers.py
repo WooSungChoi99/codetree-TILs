@@ -1,6 +1,6 @@
 a, b = tuple(map(int, input().split()))
 
-def follow_order(a, b) :
+def change_number(a, b) :
     if a > b :
         a += 25
         b *= 2
@@ -10,4 +10,6 @@ def follow_order(a, b) :
     
     return a, b
 
-print(follow_order(a, b)[0], follow_order(a, b)[1])
+a, b = change_number(a, b)
+
+print(a, b)
