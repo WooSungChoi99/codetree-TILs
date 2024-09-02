@@ -1,16 +1,12 @@
 str1 = input()
 
 def diff_alphabet_num(str1) :
-    diff_num = 0
+    arr = []
     for i in range(len(str1)) :
-        cnt = 0
-        for j in range(len(str1)) :
-            if str1[i] == str1[j] :
-                cnt += 1
-        if cnt == 1 :
-            diff_num += 1
+        if str1[i] not in arr :
+            arr.append(str1[i])
 
-    return diff_num
+    return len(arr)
 
 if diff_alphabet_num(str1) >= 2 :
     print("Yes")
