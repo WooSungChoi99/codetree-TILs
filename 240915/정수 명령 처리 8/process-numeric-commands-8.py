@@ -114,13 +114,12 @@ dll = DoublyLinkedList()
 
 for _ in range(rep):
     action = input()
-    if action.startswith("push_front") or action.startswith("push_back"):
-        action, num = action.split()
-        num = int(num)
 
-    if action == "push_front":
+    if action.startswith("push_front"):
+        num = int(action.split()[1])
         dll.push_front(num)
-    elif action == "push_back":
+    elif action.startswith("push_back"):
+        num = int(action.split()[1])
         dll.push_back(num)
     elif action == "pop_front":
         print(dll.pop_front())
@@ -129,10 +128,7 @@ for _ in range(rep):
     elif action == "size":
         print(dll.size())
     elif action == "empty":
-        if dll.empty():
-            print(1)
-        else:
-            print(0)
+        print(1 if dll.empty() else 0)
     elif action == "front":
         print(dll.front())
     elif action == "back":
