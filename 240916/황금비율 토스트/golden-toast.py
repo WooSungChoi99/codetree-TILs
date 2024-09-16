@@ -67,11 +67,18 @@ class DoublyLinkedList:
         return self.tail
     
     def node_prev(self, node):
-        return node.prev
+        if node != self.begin():
+            return node.prev
+        
+        else:
+            return node
     
     def node_next(self, node):
-        return node.next
-
+        if node != self.end():
+            return node.next
+        
+        else:
+            return node
 
 
     
@@ -87,9 +94,9 @@ for _ in range(m):
     command = input()
 
     if command == "L":
-        it = it.prev
+        it = dll.node_prev(it)
     elif command == "R":
-        it = it.next
+        it = dll.node_next(it)
     elif command == "D":
         dll.erase(it)
     else:
