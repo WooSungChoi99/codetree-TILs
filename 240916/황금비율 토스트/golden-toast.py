@@ -44,7 +44,7 @@ class DoublyLinkedList:
             node.prev = None
             node.next = None
 
-        #return next_node
+        return next_node
 
     def insert(self, node, new_data):
         if node == self.end():
@@ -90,7 +90,7 @@ for _ in range(m):
             it = it.next
     elif command == "D":
         if it != dll.end:
-            dll.erase(it)
+            it = dll.erase(it)
     else:
         new_data = command.split()[1]
         dll.insert(it, new_data)
