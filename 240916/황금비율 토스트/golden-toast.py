@@ -87,9 +87,9 @@ for _ in range(m):
     command = input()
 
     if command == "L":
-        it = dll.node_prev(it)
+        it = it.prev
     elif command == "R":
-        it = dll.node_next(it)
+        it = it.next
     elif command == "D":
         dll.erase(it)
     else:
