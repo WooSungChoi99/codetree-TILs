@@ -72,8 +72,11 @@ n, m = tuple(map(int, input().split()))
 dll_in_str= input()
 dll = DoublyLinkedList()
 
-for i in range(n):
-    dll.push_back(dll_in_str[i])
+# for i in range(n):
+#     dll.push_back(dll_in_str[i])
+
+for c in dll_in_str:
+    dll.push_back(c)
 
 it = dll.end()
 for _ in range(m):
