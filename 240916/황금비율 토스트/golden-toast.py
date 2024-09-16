@@ -83,9 +83,10 @@ for _ in range(m):
         if it != dll.begin():
             it = it.prev
     elif command == "R":
-        if i != dll.end():
+        if it != dll.end():
             it = it.next
     elif command == "D":
+        if 
         dll.erase(it)
     else:
         new_data = command.split()[1]
