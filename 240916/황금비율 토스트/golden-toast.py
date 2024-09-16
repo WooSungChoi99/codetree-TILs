@@ -89,7 +89,7 @@ for _ in range(m):
         if it != dll.end():
             it = it.next
     elif command == "D":
-        if it != dll.end:
+        if it != dll.end():
             it = dll.erase(it)
     else:
         new_data = command.split()[1]
