@@ -86,8 +86,8 @@ for _ in range(m):
         if it != dll.end():
             it = it.next
     elif command == "D":
-        if 
-        dll.erase(it)
+        if it != dll.end:
+            dll.erase(it)
     else:
         new_data = command.split()[1]
         dll.insert(it, new_data)
