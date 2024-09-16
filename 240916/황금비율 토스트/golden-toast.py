@@ -67,10 +67,10 @@ class DoublyLinkedList:
         return self.tail
     
     def node_prev(self, node):
-        return node = node.prev
+        return node.prev
     
     def node_next(self, node):
-        return node = node.next
+        return node.next
 
 
 
